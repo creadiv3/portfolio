@@ -1,0 +1,120 @@
+.hero {
+  margin: 0 auto;
+  max-width: 70%;
+  height: 70vh;
+  position: relative;
+
+  &__text {
+    font-size: 9.6rem;
+    text-transform: uppercase;
+    font-family: 'Bodoni Moda', serif;
+    color: $color-black;
+    font-weight: 400;
+    position: absolute;
+    top: 20rem;
+    left: 37rem;
+    z-index: 3;
+    z-index: 3;
+  }
+
+  &__sec-text {
+    position: absolute;
+    top: 10rem;
+    left: -30rem;
+    z-index: 3;
+  }
+
+  &__subtitle {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: $color-black;
+    position: absolute;
+    top: 43rem;
+    left: 7.6rem;
+    letter-spacing: 0.2rem;
+    z-index: 3;
+  }
+
+  &__circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $color-red;
+    border-radius: 50%;
+    position: absolute;
+    top: 45.3rem;
+    left: 38rem;
+    z-index: 3;
+    animation: showDot 1s ease forwards;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+
+  &__resume {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1.5rem 3rem;
+    color: $color-white;
+    background-color: $color-red;
+    position: absolute;
+    top: 52rem;
+    left: 35rem;
+    z-index: 3;
+    animation: resume 2s ease;
+  }
+
+  &__img {
+    width: 75rem;
+    position: fixed;
+    top: 30rem;
+    right: 30rem;
+  }
+}
+
+.hero::after {
+  content: '';
+  width: 100rem;
+  height: 50rem;
+  background-color: $color-white;
+  position: absolute;
+  top: 10rem;
+  left: 58rem;
+  z-index: 2;
+  animation: showIn 2s forwards linear;
+}
+
+@keyframes showIn {
+  from {
+    left: 58rem;
+  }
+
+  to {
+    left: 160rem;
+  }
+}
+
+@keyframes showDot {
+  from {
+    opacity: 0;
+    width: 200rem;
+    height: 200rem;
+    top: -80rem;
+    left: -50rem;
+  }
+  to {
+    opacity: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@keyframes resume {
+  from {
+    left: -50rem;
+  }
+  to {
+    left: 35rem;
+  }
+}

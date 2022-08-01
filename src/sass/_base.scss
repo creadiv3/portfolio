@@ -2,7 +2,7 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-red: #fe0000;
 $color-green: #5acc31;
-$color-grey: #666666;
+$color-grey: #888888;
 
 $padding-left: 2rem;
 
@@ -27,4 +27,5 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: $color-grey;
+  overflow-x: hidden;
 }
