@@ -1,0 +1,57 @@
+.side-nav {
+  background-color: $color-black;
+  width: 29rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(300);
+  transition: 0.6s linear;
+  &__list {
+    list-style: none;
+    position: absolute;
+    top: 120;
+    right: 25;
+    z-index: 2;
+  }
+
+  &__item {
+    color: $color-white;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.6rem;
+
+    &:hover {
+      color: $color-grey;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    bottom: 20;
+    justify-content: space-around;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: -5;
+    right: 0;
+  }
+}
+
+.links {
+  font-size: 4.8rem;
+  font-family: 'Bodoni Moda';
+  text-transform: uppercase;
+}
+
+.side-nav.active {
+  transform: translateX(0);
+}

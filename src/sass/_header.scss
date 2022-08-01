@@ -1,0 +1,101 @@
+// Introduce
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+
+  .introduce {
+    display: inherit;
+    align-items: center;
+
+    &__rectangle {
+      height: 2rem;
+      width: 2rem;
+      background-color: $color-green;
+    }
+
+    &__text {
+      text-transform: uppercase;
+      padding-left: $padding-left;
+      font-size: 1.6rem;
+    }
+  }
+
+  .nav-main {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+
+    &__list {
+      display: inherit;
+      list-style: none;
+      height: 4rem;
+      align-items: center;
+      //test
+      transition: width 0.6s linear;
+    }
+
+    &__item {
+      padding-left: $padding-left;
+      align-self: center;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      color: $color-grey;
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+
+  nav ul li {
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+
+  nav.active ul li {
+    transform: translateX(200px) rotateY(360deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+
+  .icon {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-left: 2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .icon .line {
+    background-color: $color-grey;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    transition: transform 0.6s linear;
+  }
+
+  .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+}
+
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
