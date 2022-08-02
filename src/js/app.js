@@ -2,8 +2,9 @@ const toggle = document.getElementById('toggle');
 const nav = document.getElementById('nav');
 const sideNav = document.querySelector('.side-nav');
 const textEl = document.querySelector('.introduce__text');
+const circleEl = document.querySelector('.hero__circle');
 const text = 'BARTOSZ KOZŁOWSKI';
-let speed = 80;
+let speed = 100;
 let idx = 0;
 
 // Show/hide side bar menu

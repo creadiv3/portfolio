@@ -11,7 +11,7 @@
     color: $color-black;
     font-weight: 400;
     position: absolute;
-    top: 20rem;
+    top: 10rem;
     left: 37rem;
     z-index: 3;
     z-index: 3;
@@ -29,7 +29,7 @@
     text-transform: uppercase;
     color: $color-black;
     position: absolute;
-    top: 43rem;
+    top: 35rem;
     left: 7.6rem;
     letter-spacing: 0.2rem;
     z-index: 3;
@@ -41,11 +41,11 @@
     background-color: $color-red;
     border-radius: 50%;
     position: absolute;
-    top: 45.3rem;
+    top: 37.3rem;
     left: 38rem;
     z-index: 3;
-    animation: showDot 1s ease forwards;
-    animation-delay: 2s;
+    animation: showDot 1s ease forwards 2s;
+    animation-delay: 2;
     opacity: 0;
   }
 
@@ -59,17 +59,17 @@
     color: $color-white;
     background-color: $color-red;
     position: absolute;
-    top: 52rem;
+    top: 48rem;
     left: 35rem;
     z-index: 3;
-    animation: resume 2s ease;
+    animation: resume 3s ease;
   }
 
   &__img {
-    width: 75rem;
-    position: fixed;
-    top: 30rem;
-    right: 30rem;
+    width: 60rem;
+    position: absolute;
+    top: 10rem;
+    left: 60rem;
   }
 }
 
@@ -82,7 +82,21 @@
   top: 10rem;
   left: 58rem;
   z-index: 2;
-  animation: showIn 2s forwards linear;
+  animation: showIn 3s forwards linear;
+}
+
+.arrow__down {
+  font-size: 4rem;
+  text-align: right;
+  margin-right: 10rem;
+}
+
+.fa-solid {
+  &:hover {
+    color: $color-black;
+    cursor: pointer;
+    font-size: 4.1rem;
+  }
 }
 
 @keyframes showIn {
