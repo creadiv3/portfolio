@@ -24,14 +24,16 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.left-slide > div {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+.left-slide {
+  div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
 }
 
 .left-slide {
@@ -55,12 +57,14 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.right-slide > div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
+.right-slide {
+  div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 button {

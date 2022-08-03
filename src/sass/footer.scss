@@ -1,0 +1,66 @@
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 15rem;
+  margin-top: 30rem;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+
+    p {
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  &__resume {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    h2 {
+      color: $color-white;
+      width: 20.5rem;
+    }
+
+    .footer-resume {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      padding: 1.5rem 3rem;
+      color: $color-white;
+      background-color: $color-red;
+      text-align: center;
+    }
+
+    .promo {
+      color: $color-white;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  &__designed {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    img {
+      max-width: 25rem;
+    }
+
+    p {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      text-align: center;
+    }
+  }
+}
