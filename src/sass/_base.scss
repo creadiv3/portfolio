@@ -34,3 +34,14 @@ body {
   max-width: 120rem;
   margin: 20rem auto;
 }
+
+.subheding {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: 'Bodoni Moda', serif;
+  position: relative;
+  color: $color-black;
+  border-bottom: 0.2rem solid $color-red;
+  width: 23rem;
+  letter-spacing: 0.2rem;
+}
